@@ -1,13 +1,13 @@
 import java.time.LocalDate;
 
 public class Main {
-    public static int leapYear(int year) {
+    public static void leapYear(int year) {
         if ((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0))) {
             System.out.println(year + " год является високосным.");
         } else {
             System.out.println(year + " год не является високосным.");
         }
-        return year;
+
     }
 
     public static void osUpdate(int clientOs, int clientDeviceYear) {
@@ -39,7 +39,7 @@ public class Main {
     public static void main(String[] args) {
         // Задание №1
         System.out.println("Задание №1");
-        int year = 2020;
+        int year = 2018;
         leapYear(year);
 
         // Задание №2
@@ -48,7 +48,7 @@ public class Main {
 
         // Задание №3
         System.out.println("\nЗадание №3");
-        byte deliveryDays = deliveryTime(90);
-        System.out.println("На доставку потребуется дней: " + deliveryDays);
+        byte deliveryTime = deliveryTime(90);
+        System.out.println("На доставку потребуется дней: " + deliveryTime);
     }
 }
