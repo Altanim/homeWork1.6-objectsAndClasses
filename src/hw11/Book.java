@@ -2,7 +2,7 @@ package hw11;
 
 public class Book {
     private String bookName;
-    Author author;
+    private Author author;
     private int publicationYear;
     public Book(String bookName, Author createAuthor, int publicationYear) {
         this.bookName = bookName;
